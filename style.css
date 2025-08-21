@@ -541,6 +541,7 @@ a {
 /* Responsive Design */
 @media (max-width: 768px) {
   .highlights-section{
+    display: flex;
     flex-direction: column;
   }
     .intro-content {
