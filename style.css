@@ -540,6 +540,9 @@ a {
 /* ****************************************************** */
 /* Responsive Design */
 @media (max-width: 768px) {
+  .highlights-section{
+    flex-direction: column;
+  }
     .intro-content {
         flex-direction: column;
         text-align: center;
