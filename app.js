@@ -49,7 +49,7 @@
     typeEffect();
 
 // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-
+// ANIMATED SCROLL 
 
 document.addEventListener('DOMContentLoaded', () => {
 
