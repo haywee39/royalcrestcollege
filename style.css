@@ -37,7 +37,7 @@
       position: fixed;
       top: 3.5rem;
       left: 30px;
-      font-size: 1.5rem;
+      font-size: 1rem;
       color: white;
       cursor: pointer;
       z-index: 10000;     
@@ -50,7 +50,7 @@
       top: 3.5rem;
       right: 30px;
       text-align: right;
-      font-size: 1.5rem;
+      font-size: 1rem;
       color: white;
       cursor: pointer;
       z-index: 10000;
@@ -96,7 +96,7 @@
       border-right: none; /* blinking cursor */
       white-space: wrap;
       overflow: hidden;
-      font-size: 40px;
+      font-size: 25px;
 }
 /* .hero-section img{
      position: absolute;
@@ -176,13 +176,13 @@ a {
 }
 
 .school-name {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
     color: var(--background-white);
 }
 
 .tagline {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
     margin-top: 0;
 }
