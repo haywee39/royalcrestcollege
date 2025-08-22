@@ -41,7 +41,7 @@ a {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      padding: 80px 50px;
+      padding: 80px 130px;
       transform: translateY(-100%);
       transition: transform 0.4s ease;
       z-index: 9999;
@@ -53,16 +53,30 @@ a {
     /* MENU / CLOSE toggle */
     .menu-toggle {
       position: fixed;
-      top: 20px;
+      top: 3.5rem;
       left: 30px;
       font-size: 1.5rem;
       color: white;
       cursor: pointer;
       z-index: 10000;
+      text-decoration: underline;
+      text-underline-offset: 15px;
       user-select: none;
     }
-    .menu-toggle:hover {
+
+    .tour {
+      position: fixed;
+      top: 3.5rem;
+      right: 30px;
+      text-align: right;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+      z-index: 10000;
+      gap: 10px;
       text-decoration: underline;
+      text-underline-offset: 15px;
+      user-select: none;
     }
 
     /* Nav links */
@@ -100,7 +114,7 @@ a {
   }
  
   .texts{
-    margin-top: 5rem;
+    margin-top: 8rem;
     gap: 20px;
     padding: 20px;
     width: 65vw;
