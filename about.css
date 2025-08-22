@@ -1,0 +1,220 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-white);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    color: rgb(85, 4, 4);;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+/* animated section */
+/* .animated-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+} */
+
+/* Final state (visible) */
+/* .animated-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+} */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+ /* Fullscreen overlay menu */
+    .fullscreen-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(85, 4, 4);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 80px 50px;
+      transform: translateY(-100%);
+      transition: transform 0.4s ease;
+      z-index: 9999;
+    }
+    .fullscreen-menu.show {
+      transform: translateY(0);
+    }
+
+    /* MENU / CLOSE toggle */
+    .menu-toggle {
+      position: fixed;
+      top: 20px;
+      left: 30px;
+      font-size: 1.5rem;
+      color: green;
+      cursor: pointer;
+      z-index: 10000;
+      user-select: none;
+    }
+    .menu-toggle:hover {
+      text-decoration: underline;
+    }
+
+    /* Nav links */
+    .fullscreen-menu a {
+      position: relative;
+      display: inline-block;
+      color: white;
+      font-size: 1.8rem;
+      margin: 15px 0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .fullscreen-menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: white;
+      transition: width 0.3s ease;
+    }
+    
+    .fullscreen-menu a:hover::after {
+      width: 100%;
+    }
+/* ***************************************** */
+/* ********************** */
+/* Highlights Section */
+.highlights-section {
+    width: 100%;
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: blue;
+
+}
+
+.highlight-item {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    flex: 1;
+    max-width: 450px;
+    /* width: 500px; */
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.highlight-icon i{
+ color: rgb(85, 4, 4);
+}
+
+.highlight-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgb(85, 4, 4, 0.4);
+    background: rgb(85, 4, 4, 0.3);
+    color: rgb(85, 4, 4);
+}
+/* ************************************************* */
+/* Student-pro Section */
+.student-pro {
+    padding: 4rem 2rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+    justify-content: center;
+    background-color: yellow;
+}
+.student-item{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    margin: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: blueviolet; */
+}
+.student-item img{
+    width: 35%;
+    height: 100%;
+    padding: 0;
+}
+.value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+    gap: 10px;
+    /* background-color: red; */
+}
+.value i{
+    color:  rgb(85, 4, 4) ;
+}
+
+
+
+/* ****************************************************** */
+/* Responsive Design */
+@media (max-width: 768px) {
+  .highlights-section{
+    display: flex;
+    flex-direction: column;
+  }
+    .intro-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .school-name {
+        font-size: 3rem;
+    }
+    .student-pro {
+    padding: 2rem 0;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    }
+    .student-item{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    }
+    .student-item img{
+        width: 85%;
+        /* padding: 0; */
+    }
+    .value{
+        align-items: center;
+        width: 80%;
+        height: auto;
+    }
+    .contact-address{
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+    }
+    .verti{
+      display: none;
+      visibility: hidden;
+    }
+    .hori{
+      display: flex;
+      visibility: visible;
+    }
+}
