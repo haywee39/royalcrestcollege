@@ -29,8 +29,36 @@ a {
     transform: translateY(0);
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+     /* MENU / CLOSE toggle */
+    .menu-toggle {
+      position: fixed;
+      top: 3.5rem;
+      left: 20px;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      z-index: 10000;     
+      text-decoration: underline;
+      text-underline-offset: 15px;
+      letter-spacing: 2px;
+      user-select: none;
+    }
+     .tour {
+      position: fixed;
+      top: 3.5rem;
+      right: 20px;
+      text-align: right;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      z-index: 10000;
+      text-decoration: underline;
+      text-underline-offset: 15px;
+      letter-spacing: 2px;
+      user-select: none;
+    }
  /* Fullscreen overlay menu */
-    .fullscreen-menu {
+      .fullscreen-menu {
       position: fixed;
       top: 0;
       left: 0;
@@ -41,42 +69,13 @@ a {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      padding: 80px 130px;
+      padding: 150px 30px;
       transform: translateY(-100%);
       transition: transform 0.4s ease;
       z-index: 9999;
     }
     .fullscreen-menu.show {
       transform: translateY(0);
-    }
-
-    /* MENU / CLOSE toggle */
-    .menu-toggle {
-      position: fixed;
-      top: 3.5rem;
-      left: 30px;
-      font-size: 1rem;
-      color: white;
-      cursor: pointer;
-      z-index: 10000;
-      text-decoration: underline;
-      text-underline-offset: 15px;
-      user-select: none;
-    }
-
-    .tour {
-      position: fixed;
-      top: 3.5rem;
-      right: 30px;
-      text-align: right;
-      font-size: 1rem;
-      color: white;
-      cursor: pointer;
-      z-index: 10000;
-      gap: 10px;
-      text-decoration: underline;
-      text-underline-offset: 15px;
-      user-select: none;
     }
 
     /* Nav links */
