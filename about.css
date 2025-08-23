@@ -1,4 +1,4 @@
-body {
+html, body {
     font-family: 'Poppins', sans-serif;
     color: var(--text-color);
     background-color: var(--background-white);
@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -56,7 +57,7 @@ a {
       text-underline-offset: 15px;
       letter-spacing: 2px;
       user-select: none;
-      padding-right: 10px;
+      /* padding-right: 10px; */
     }
     .logo {
       position: absolute;
