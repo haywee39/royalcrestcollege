@@ -362,10 +362,16 @@ a {
     flex-direction: column;
     height: auto;
     }
-    .student-item img{
-        width: 85%;
-        /* padding: 0; */
-    }
+    .stack {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: grid;
+    border-radius: 20%;
+    place-items: center;
+    background-color: rgb(85, 4, 4);
+
+  }
     .value{
         align-items: center;
         width: 80%;
