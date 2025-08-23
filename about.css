@@ -56,6 +56,7 @@ a {
       text-underline-offset: 15px;
       letter-spacing: 2px;
       user-select: none;
+      padding-right: 10px;
     }
     .logo {
       position: absolute;
@@ -236,6 +237,7 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
+    padding: 0 20px;
     height: auto;
     gap: 2rem;
     justify-content: center;
@@ -323,8 +325,7 @@ a {
 
  /* <!--START THE TEAM PROFILE BEGIN HERE--> */
   #team{
-    /* margin-top:8vh; */
-    padding-top: 5vh;
+    padding-top: 2vh;
     display: flex;
     flex-direction:column;
     width:100vw;
@@ -337,9 +338,9 @@ a {
     margin: 20px; /* Add space around each profile card */
     display: flex;
     flex-direction: column;
-    width: 310px;
-    height: 410px;
-    background: transparent;
+    width: 300px;
+    height: 400px;
+    background: rgb(85, 4, 4, 0.3);
     transform: translateX(100%);
     opacity: 0;
     transition: transform 1s ease, opacity 1s ease;
