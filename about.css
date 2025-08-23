@@ -400,6 +400,90 @@ a {
   
   /* <!--END THE TEAMS PROFILE END HERE   --> */
 /* *************************************************** */
+/* ************************************* */
+
+/* CTA Footer */
+.cta-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    gap: 20px;
+    background-color:rgb(85, 4, 4);
+    color: white;
+}
+
+.cta-footer h3 {
+    color: var(--background-white);
+    margin-bottom: 1.5rem;
+}
+
+.cta-footer .cta-button {
+    background-color: white;
+    color: rgb(85, 4, 4);
+}
+
+.cta-button {
+    display: inline-block;
+    background:  rgb(85, 4, 4);
+    color: white;
+    letter-spacing: 2px;
+    padding: 1.2rem 5rem;
+    border-radius: 3px;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.cta-button:hover {
+    background-color: rgb(85, 4, 4);
+    transform: translateY(-5px);
+    border: none;
+}
+.hori{
+  display: none;
+  visibility: hidden;
+}
+.contact-address{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  width: 100%;
+  height: 45vh;
+  padding: 0;
+  /* background-color: red; */
+}
+
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  text-align: left;    
+  max-width: 200px;
+  color: white;  
+  /* background-color: blue;     */
+}
+.quick-link a{
+  text-decoration: none;
+  color: white;
+}
+
+.address {
+  align-items: center;
+  text-align: left;    
+  max-width: 300px;
+  color: white; 
+  /* background-color: blue;      */
+}
+.quick-link h4, .address h4, .map h4{
+  color: white;
+}
+
+ .map {
+   max-width: 300px; 
+}
+
 
 
 
