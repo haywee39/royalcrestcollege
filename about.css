@@ -31,13 +31,14 @@ a {
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      z-index: 9999;
+      z-index: 99999;
     }
 
     /* Logo */
     #loader img {
       width: 120px; /* adjust as needed */
       margin-bottom: 20px;
+      background-color: white;
     }
 
     /* Percentage text */
