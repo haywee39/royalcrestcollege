@@ -1,3 +1,23 @@
+html, body {
+    background-color: var(--background-white);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    color: rgb(85, 4, 4);;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
 /* animated section */
 .animated-section {
     opacity: 0;
@@ -106,6 +126,12 @@
       transform: translate(-50%, -50%);
       z-index: 10000;
     }
+    .logo{
+      width: 120px;
+      height: 120px;
+      border: white 1px solid;
+      background: white;
+    }
  /* Fullscreen overlay menu */
     .fullscreen-menu {
       position: fixed;
@@ -153,26 +179,6 @@
     }
 /* ***************************************** */
 /* ************************************** */
-html, body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-color);
-    background-color: var(--background-white);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Merriweather', serif;
-    color: rgb(85, 4, 4);;
-}
-
-a {
-    text-decoration: none;
-}
-
 
 /* Hero Section */
 .hero-section {
@@ -214,7 +220,7 @@ a {
 .hero-section img{
     width: 120px;
     height: 120px;
-     background: rgb(85, 4, 4); 
+     background: white; 
 
 }
 .hero-section .typing{
