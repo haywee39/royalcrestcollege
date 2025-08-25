@@ -4,15 +4,20 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    /* font-family: 'Merriweather', serif; */
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
     color: rgb(85, 4, 4);;
 }
+p, a, b{
+  font-size: 18px;
+  text-decoration: none;
+}
 
-a {
-    text-decoration: none;
+ p, a{
+    font-weight: lighter;
   }
 
   /* ************************** */
@@ -172,6 +177,42 @@ a {
       width: 100%;
     }
 /* ***************************************** */
+  #landing-about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    background-image: url(./homeimg/lfthand.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+.child{
+    position: absolute;
+    width:100%;
+    height:100%;
+    color: white;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(85, 4, 4, 0.3);
+    z-index: 100;
+    
+}
+.title{
+    display: flex;
+    font-weight: 800;
+    margin-top: 25vh;
+    justify-content: center;
+    color: white;
+    z-index: 10000;
+}
+.title b{
+  color: red;
+  word-spacing: 20px !important;
+}
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
 .about{
     display: flex;
     flex-direction: column;
@@ -182,22 +223,20 @@ a {
   }
  
   .texts{
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
     gap: 20px;
     padding: 20px;
-    width: 65vw;
+    width: 70vw;
     color: white;
   }
-  .texts h1, b{
+  .texts h1, .texts p  {
     color: white;
-    letter-spacing: 1px;
   }
-  
-  
+ 
   .texts img{
-    width: 200px;
-    height: 200px;
-    border-radius: 20%;
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
     margin-left: 2rem;
     /* shape-outside:circle(); */
     background-color: white;
@@ -232,13 +271,12 @@ a {
 }
 
 .highlight-item {
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex: 1;
     max-width: 450px;
-    /* width: 500px; */
     padding: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -298,7 +336,7 @@ a {
     justify-content: center;
     /* background-color: yellow; */
 }
-.student-pro h4{
+.student-pro h5{
   font-style: italic;
   padding: 0 30px;
 }
@@ -493,9 +531,10 @@ a {
 }
 
 .cta-button:hover {
-    background-color: rgb(85, 4, 4);
+    background-color: white;
     transform: translateY(-5px);
     border: none;
+    /* color: white; */
 }
 .hori{
   display: none;
