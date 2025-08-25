@@ -1,12 +1,12 @@
+html{
+  overflow-x: hidden;
+}
 html, body {
-    background-color: var(--background-white);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
-    /* font-family: 'Merriweather', serif; */
+    color: white;
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
     color: rgb(85, 4, 4);;
@@ -17,7 +17,7 @@ p, a, b{
 }
 
  p, a{
-    font-weight: lighter;
+    font-weight: normal;
   }
 
 
@@ -302,6 +302,9 @@ p, a, b{
     flex-wrap: wrap;
     /* background-color: blue; */
 
+}
+.highlight-item p, .student-item p{
+  color: black;
 }
 
 .highlight-item {
