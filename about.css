@@ -300,6 +300,7 @@ a {
 }
 .student-pro h4{
   font-style: italic;
+  padding: 0 30px;
 }
 .student-item{
     display: flex;
@@ -516,6 +517,7 @@ a {
   text-align: left;    
   max-width: 200px;
   color: white;  
+  gap: 5px;
   /* background-color: blue;     */
 }
 .quick-link a{
