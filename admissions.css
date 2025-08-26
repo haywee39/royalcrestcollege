@@ -93,7 +93,7 @@ p, a, b{
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&/& */
 
 
-    #landing-academics{
+    #landing-admission{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -137,57 +137,6 @@ p, a, b{
   /* background-color: blue; */
 }
 /* ****************************************** */
-.acad-cover{
-  margin-top: 2rem;
-  width: 100vw;
-  height: auto;
-  gap: 20px;
-
-}
-.junior, .senior{
-  display: flex;
-  width: 100%;
-  height: 90vh;
-  padding: 0 8rem;
-  gap: 20px;
-}
-.jtext{
-  padding:0 20px;
-  width: 50%;
-  height: 100%;
-  /* background-color: blue; */
-}
-.jtext p{
-  color: black;
-}
-.jimg{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  gap: 20px;
-  /* background-color: blue; */
-
-}
-.jimg img{
-  width: 100%;
-  height: 50%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -195,7 +144,7 @@ p, a, b{
 /* ************************************* */
 
 /* CTA Footer */
-.cta-footer {
+/* .cta-footer {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -244,7 +193,7 @@ p, a, b{
   width: 100%;
   height: 45vh;
   padding: 0;
-  /* background-color: red; */
+  background-color: red;
 }
 
 .quick-link {
@@ -254,7 +203,7 @@ p, a, b{
   max-width: 200px;
   color: white;  
   gap: 5px;
-  /* background-color: blue;     */
+  background-color: blue;    
 }
 .quick-link a{
   text-decoration: none;
@@ -266,7 +215,7 @@ p, a, b{
   text-align: left;    
   max-width: 300px;
   color: white; 
-  /* background-color: blue;      */
+  background-color: blue;     
 }
 .quick-link h4, .address h4, .map h4{
   color: white;
@@ -274,7 +223,7 @@ p, a, b{
 
  .map {
    max-width: 300px; 
-}
+} */
 
 
 
@@ -291,33 +240,15 @@ p, a, b{
     width: 100%;
     padding: 1rem;
   }
-  .acad-cover{
-    padding: 1rem;
-    /* background-color: red; */
-  }
-    .junior{
-      flex-direction: column;
-      height: auto;
-      padding: 0;
-      /* background-color: orange; */
-    }
-   .jtext{
-      width: 100%;
-      height: auto;
-      padding: 0;
-      margin: 0;
-      /* background-color: orchid; */
-    }
-    .jimg{
-      width: 100%;
-      height: 100%;
-      gap: 20px;
-      /* background-color: blue; */
-    }
-    .jimg img{
-      width: 100%;
-      height: 50%;
-    }
+  /* ******************************* */
+
+
+
+
+
+
+
+/* ****************************** */
     .contact-address{
       flex-direction: column;
       justify-content: center;
