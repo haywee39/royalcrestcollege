@@ -1,0 +1,248 @@
+html{
+    overflow-x: hidden;
+  }
+  html, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Merriweather', serif;
+      color: rgb(85, 4, 4);;
+  }
+  p, a, b{
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+   p, a{
+      font-weight: normal;
+    }
+  
+  
+  /* animated section */
+  .animated-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  /* Final state (visible) */
+  .animated-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+  /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&/& */
+
+
+  #landing-arts{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 60vh;
+    background-image: url(./acdemicsimg/stuassbly.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+.child{
+    position: absolute;
+    width:100%;
+    height:100%;
+    color: white;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(85, 4, 4, 0.6);
+    z-index: 100;
+    
+}
+.title{
+    display: flex;
+    font-weight: 800;
+    margin-top: 25vh;
+    justify-content: center;
+    color: white;
+}
+
+.class-category{
+    width: 40%;
+    background-color: white;
+}
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+.brief-intro{
+  width: 100vw;
+  padding: 4rem;
+  text-align: center;
+  color: rgb(85, 4, 4);
+  /* background-color: blue; */
+}
+/* ****************************************** */
+
+
+
+
+
+
+
+
+/* CTA Footer */
+.cta-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    gap: 20px;
+    background-color:rgb(85, 4, 4);
+    color: white;
+}
+
+.cta-footer h3 {
+    color: var(--background-white);
+    margin-bottom: 1.5rem;
+}
+
+.cta-footer .cta-button {
+    background-color: white;
+    color: rgb(85, 4, 4);
+}
+
+.cta-button {
+    display: inline-block;
+    background:  rgb(85, 4, 4);
+    color: white;
+    letter-spacing: 2px;
+    padding: 1.2rem 5rem;
+    border-radius: 3px;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.cta-button:hover {
+    background-color: white;
+    transform: translateY(-5px);
+    border: none;
+    /* color: white; */
+}
+.hori{
+  display: none;
+  visibility: hidden;
+}
+.contact-address{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  width: 100%;
+  height: 45vh;
+  padding: 0;
+  /* background-color: red; */
+}
+
+.quick-link {
+  display: flex;
+  flex-direction: column;
+  text-align: left;    
+  max-width: 200px;
+  color: white;  
+  gap: 5px;
+  /* background-color: blue;     */
+}
+.quick-link a{
+  text-decoration: none;
+  color: white;
+}
+
+.address {
+  align-items: center;
+  text-align: left;    
+  max-width: 300px;
+  color: white; 
+  /* background-color: blue;      */
+}
+.quick-link h4, .address h4, .map h4{
+  color: white;
+}
+
+ .map {
+   max-width: 300px; 
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo{
+  display: none;
+  visibility: hidden;
+}
+.texts{
+  padding: 20px;
+  width: 100%;
+}
+ .texts img{
+  width: 100px;
+  height: 100px;
+  border-radius: 15%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.highlights-section{
+  display: flex;
+  flex-direction: column;
+}
+  .intro-content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .school-name {
+      font-size: 3rem;
+  }
+  .student-pro {
+  padding: 2rem 0;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  }
+  .student-item{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  }
+  .stack {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  display: grid;
+  border-radius: 20%;
+  place-items: center;
+  background-color: rgb(85, 4, 4);
+
+}
+  .value{
+      align-items: center;
+      width: 80%;
+      height: auto;
+  }
+   .core-val-cover {
+  grid-template-columns: repeat(2, 1fr);
+}
+  .contact-address{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .verti{
+    display: none;
+    visibility: hidden;
+  }
+  .hori{
+    display: flex;
+    visibility: visible;
+  }
+}
