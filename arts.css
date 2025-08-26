@@ -181,56 +181,7 @@ html{
   display: none;
   visibility: hidden;
 }
-.texts{
-  padding: 20px;
-  width: 100%;
-}
- .texts img{
-  width: 100px;
-  height: 100px;
-  border-radius: 15%;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.highlights-section{
-  display: flex;
-  flex-direction: column;
-}
-  .intro-content {
-      flex-direction: column;
-      text-align: center;
-  }
-  .school-name {
-      font-size: 3rem;
-  }
-  .student-pro {
-  padding: 2rem 0;
-  gap: 1rem;
-  flex-wrap: nowrap;
-  }
-  .student-item{
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  }
-  .stack {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  display: grid;
-  border-radius: 20%;
-  place-items: center;
-  background-color: rgb(85, 4, 4);
 
-}
-  .value{
-      align-items: center;
-      width: 80%;
-      height: auto;
-  }
-   .core-val-cover {
-  grid-template-columns: repeat(2, 1fr);
-}
   .contact-address{
     flex-direction: column;
     justify-content: center;
