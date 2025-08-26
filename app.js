@@ -42,7 +42,7 @@
 // *******************************************************
 
 // TYPING EFFECT OF CORE VALUES 
-  const words = ["EXCELLENCE", "LEADERSHIP", "GROWTH"];
+  const words = ["CHARACTER", "KNOWLEDGE", "CONFIDENCE"];
     let i = 0;      // index of word
     let j = 0;      // index of letter
     let currentWord = "";

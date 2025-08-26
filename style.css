@@ -235,8 +235,9 @@ p, a, b{
 
 
 .school-name {
-    font-size: 3.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    /* font-weight: normal; */
+    /* margin-bottom: 0.5rem; */
     color: var(--background-white);
 }
 
@@ -366,7 +367,7 @@ p, a, b{
     align-items: center;
     width: 30%;
     height: 80%;
-    gap: 10px;
+    /* gap: 10px; */
     /* background-color: red; */
 }
 .value i{
@@ -708,7 +709,7 @@ p, a, b{
     visibility: hidden;
   }
   .school-name {
-    font-size: 3rem;
+    font-size:2rem;
 }
 
 .tagline {
