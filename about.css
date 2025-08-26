@@ -212,11 +212,11 @@ p, a, b{
 /* CORE VALUE  */
 .core-val-section {
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: space-evenly;
     flex-wrap: wrap;
     background-color: rgb(85, 4, 4, 0.3);
@@ -232,7 +232,7 @@ p, a, b{
 .core-val-cover {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 per row */
-  gap: 30px;
+  gap: 25px;
   text-align: center;
   justify-items: center;
   /* background-color: yellow; */
@@ -240,6 +240,7 @@ p, a, b{
 /* ************************************************* */
 /* Student-pro Section */
 .student-pro {
+    margin-top: 20px;
     padding: 4rem 2rem;
     text-align: center;
     align-items: center;
@@ -249,7 +250,7 @@ p, a, b{
     width: 100%;
     padding: 0 20px;
     height: auto;
-    gap: 2rem;
+    gap: 10px;
     justify-content: center;
     /* background-color: yellow; */
 }

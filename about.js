@@ -19,30 +19,7 @@
         }, 800);
       }
     }, 30); // Adjust speed (30ms × 100 = 3 seconds total)
-  // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-
-
-
-
-
-
-
-
-// FULLSCREEN MENU DESIGN
-  const menuToggle = document.getElementById("menuToggle");
-  const fullscreenNav = document.getElementById("fullscreenNav");
-  let menuOpen = false;
-
-  menuToggle.addEventListener("click", () => {
-    menuOpen = !menuOpen;
-    if (menuOpen) {
-      fullscreenNav.classList.add("show");
-      menuToggle.textContent = "CLOSE";
-    } else {
-      fullscreenNav.classList.remove("show");
-      menuToggle.textContent = "MENU";
-    }
-  });
+  // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 // *******************************************************
 // ANIMATED SCROLL 
 
