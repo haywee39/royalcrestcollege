@@ -148,8 +148,8 @@ p, a, b{
   }
  
   .texts img{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 15%;
     margin-left: 2rem;
     /* shape-outside:circle(); */
@@ -172,7 +172,7 @@ p, a, b{
 /* **************************************************   */
       /* ********************** */
 /* Highlights Section */
-.highlights-section {
+/* .highlights-section {
     width: 100%;
     padding: 4rem 2rem;
     text-align: center;
@@ -180,7 +180,7 @@ p, a, b{
     gap: 2rem;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* background-color: blue; */
+    background-color: blue;
 
 }
 .highlight-item p, .student-item p{
@@ -206,7 +206,7 @@ p, a, b{
     box-shadow: 0 10px 20px rgb(85, 4, 4, 0.4);
     background: rgb(85, 4, 4, 0.3);
     color: rgb(85, 4, 4);
-}
+} */
 
 /* **********************************************8 */
 /* CORE VALUE  */
@@ -329,10 +329,14 @@ p, a, b{
     width: 30%;
     height: 80%;
     gap: 10px;
+    /* color: black; */
     /* background-color: red; */
 }
-.value i{
+.value h3, h5, i{
     color:  rgb(85, 4, 4) ;
+}
+.value p{
+  color: black;
 }
 
  /* <!--START THE TEAM PROFILE BEGIN HERE--> */
@@ -518,17 +522,17 @@ p, a, b{
     margin-left: 10px;
     margin-right: 10px;
 }
-  .highlights-section{
+  /* .highlights-section{
     display: flex;
     flex-direction: column;
-  }
-    .intro-content {
+  } */
+    /* .intro-content {
         flex-direction: column;
         text-align: center;
-    }
-    .school-name {
+    } */
+    /* .school-name {
         font-size: 3rem;
-    }
+    } */
     .student-pro {
     padding: 2rem 0;
     gap: 1rem;
