@@ -139,8 +139,85 @@ p, a, b{
 /* ****************************************** */
 
 
+  /* ****************************************** */
+.acad-cover{
+  display: flex;
+  width: 100vw;
+  height: auto;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 20px;
+}
+.junior{
+  display: flex;
+  width: 100%;
+  height:100%;
+}
+.jtext{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding:0 20px; */
+  width: 40%;
+  height: 100%;
+  /* background-color: blue; */
+}
+.jtext p{
+  color: black;
+  text-align: center;
+}
+.jimg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  /* gap: 20px; */
+  /* background-color: blue; */
 
+}
+.jimg img{
+  width: 100%;
+  height: 50%;
+}
 
+/* **************************** */
+/* ************************** */
+.tour-section {
+  padding: 65px 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(85, 4, 4, 0.6);
+  /* background-color: red; */
+}
+
+.tour-cover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 65%;
+  height: 100%;
+  gap: 2rem;
+  /* background-color: blue; */
+
+}
+.tour-cover h2, h6{
+  color: white;
+}
+.tour-cover h2{
+  word-spacing: .5rem;
+  /* letter-spacing: .5rem; */
+}
+.tour-cover h6{
+  word-spacing: .5rem;
+  letter-spacing: 1rem;
+}
+/* ****************************************** */
 /* ************************************* */
 
 /* CTA Footer */
@@ -239,13 +316,63 @@ p, a, b{
     padding: 1rem;
   }
   /* ******************************* */
+      .acad-cover{
+    padding: 1rem;
+    /* background-color: red; */
+  }
+    .junior{
+      flex-direction: column;
+      height: auto;
+      padding: 0;
+      /* background-color: orange; */
+    }
+   .jtext{
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin: 0;
+      /* background-color: orchid; */
+    }
+    .jimg{
+      width: 100%;
+      height: 100%;
+      gap: 20px;
+      /* background-color: blue; */
+    }
+    .jimg img{
+      width: 100%;
+      height: 50%;
+    }
+    /* &&&&&&&&&&&&&&&&&&&&&&&&&& */
 
 
 
 
 
-
-
+   /* ************************ */
+    .tour-section{
+      width: 100%;
+      height: 100%;
+      padding: 15px 5px;
+  
+    }
+    .tour-cover{
+      width: 90%;
+      height: auto;
+      gap: .5rem;
+    }
+    .tour-section h2{
+       text-align: center;
+    }
+    .tour-cover h6{
+      word-spacing: 0;
+      letter-spacing: 1rem;
+    }
+    .line{
+      height: 3vh;
+    }
+    /* ***************************** */
+ 
 /* ****************************** */
     .contact-address{
       flex-direction: column;
