@@ -129,16 +129,10 @@ p, a, b{
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
-.brief-intro{
-  width: 100vw;
-  padding: 4rem;
-  text-align: center;
-  color: rgb(85, 4, 4);
-  /* background-color: blue; */
-}
+
 /* ****************************************** */
 .acad-cover{
-  margin-top: 2rem;
+  margin-top: 4rem;
   width: 100vw;
   height: auto;
   gap: 20px;
@@ -175,6 +169,37 @@ p, a, b{
   height: 50%;
 }
 
+/* **************************** */
+/* Intro Section */
+.intro-section {
+    padding: 1rem 5rem;
+    background-color: rgb(85, 4, 4, 0.3);
+}
+
+.intro-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-container, .intro-text-container {
+    flex: 1;
+    text-align: left;
+    gap: 2rem;
+}
+
+.intro-text-container h2{
+  text-decoration: underline;
+  text-underline-offset: 15px;
+
+} 
+.intro-text-container p{
+    color: black;
+}
+
+/* ********************** */
 
 
 
@@ -191,6 +216,43 @@ p, a, b{
 
 
 
+
+/* ************************** */
+.tour-section {
+  padding: 65px 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(85, 4, 4, 0.6);
+  /* background-color: red; */
+}
+
+.tour-cover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 65%;
+  height: 100%;
+  gap: 2rem;
+  /* background-color: blue; */
+
+}
+.tour-cover h2, h6{
+  color: white;
+}
+.tour-cover h2{
+  word-spacing: .5rem;
+  /* letter-spacing: .5rem; */
+}
+.tour-cover h6{
+  word-spacing: .5rem;
+  letter-spacing: 1rem;
+}
+/* ****************************************** */
 
 /* ************************************* */
 
@@ -318,6 +380,43 @@ p, a, b{
       width: 100%;
       height: 50%;
     }
+    /* &&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* Intro Section */
+.intro-section {
+    padding: 1rem 1rem;
+}
+
+.intro-content {
+    gap: 2.5rem;
+}
+
+.intro-container, .intro-text-container {
+  gap: 1.5rem;
+}
+/* *************************************** */
+     /* ************************ */
+    .tour-section{
+      width: 100%;
+      height: 100%;
+      padding: 15px 5px;
+  
+    }
+    .tour-cover{
+      width: 90%;
+      height: auto;
+      gap: .5rem;
+    }
+    .tour-section h2{
+       text-align: center;
+    }
+    .tour-cover h6{
+      word-spacing: 0;
+      letter-spacing: 1rem;
+    }
+    .line{
+      height: 3vh;
+    }
+    /* ***************************** */
     .contact-address{
       flex-direction: column;
       justify-content: center;
