@@ -81,13 +81,171 @@ html{
   /* background-color: blue; */
 }
 /* ****************************************** */
+/* ****************************************** */
+  /* ************************************************* */
+/* Student-pro Section */
+.student-pro {
+    /* margin-top: 20px; */
+    padding: 4rem 2rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(85, 4, 4, 0.3);
+}
+.student-pro h5{
+  font-style: italic;
+  padding: 0 30px;
+}
+.student-item{
+    display: flex;
+    width: 85%;
+    height: 70vh;
+    margin: 3rem;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;  
+    /* background-color: blueviolet; */
+}
+
+
+/* ****************************************************    */
+  .stack {
+    position: relative;
+    width: 35%;
+    height: 80%;
+    display: grid;
+    border-radius: 20%;
+    place-items: center;
+    background-color: rgb(85, 4, 4);
+
+  }
+
+  /* Rhombus (diamond) */
+  .diamond {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(85, 4, 4, 0.7) ;
+    transform: rotate(45deg);
+    border-radius: 20%;
+    z-index: 0;
+    animation: bob 2.4s ease-in-out infinite;
+  }
+
+  /* Square image on top */
+  .photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20%;
+    z-index: 1;
+  }
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+  }
+
+  /* Bounce animation */
+  @keyframes bob {
+    0%, 100% { transform: rotate(45deg) translateY(0); }
+    50%      { transform: rotate(45deg) translateY(-10px); }
+  }
+
+  /* Reduced motion users */
+  @media (prefers-reduced-motion: reduce) {
+    .diamond { animation: none; }
+  }
+/* ****************************************************************** */
+.value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+    gap: 10px;
+    /* color: black; */
+    /* background-color: red; */
+}
+.value h3, h5, i{
+    color:  rgb(85, 4, 4) ;
+}
+.value p{
+  color: black;
+}
+/* ********************************************* */
 
 
 
 
 
 
+/* ************************** */
+/* .hero-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+} */
 
+.tour-section {
+  padding: 65px 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(85, 4, 4, 0.3);
+  /* background-color: red; */
+}
+
+.tour-cover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 65%;
+  height: 100%;
+  gap: 2rem;
+  /* background-color: blue; */
+
+}
+.tour-cover h2, h6{
+  color: white;
+}
+.tour-cover h2{
+  word-spacing: .5rem;
+  /* letter-spacing: .5rem; */
+}
+.tour-cover h6{
+  word-spacing: .5rem;
+  letter-spacing: 1rem;
+}
+/* ****************************************** */
+
+
+
+
+
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* CTA Footer */
 .cta-footer {
     display: flex;
@@ -181,6 +339,49 @@ html{
   display: none;
   visibility: hidden;
 }
+ .student-pro {
+    padding: 2rem 0;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    }
+    .student-item{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    }
+    .student-item img{
+        width: 85%;
+        /* padding: 0; */
+    }
+    .value{
+        align-items: center;
+        width: 80%;
+        height: auto;
+    }
+    /* ************************ */
+        /* ************************ */
+    .tour-section{
+      width: 100%;
+      height: 100%;
+      padding: 15px 5px;
+  
+    }
+    .tour-cover{
+      width: 90%;
+      height: auto;
+      gap: .5rem;
+    }
+    .tour-section h2{
+       text-align: center;
+    }
+    .tour-cover h6{
+      word-spacing: 0;
+      letter-spacing: 1rem;
+    }
+    .line{
+      height: 3vh;
+    }
+    /* &&&&&&&&&&&&&&&&&& */
 
   .contact-address{
     flex-direction: column;
