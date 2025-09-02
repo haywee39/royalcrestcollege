@@ -170,44 +170,6 @@ p, a, b{
   }
 }
 /* **************************************************   */
-      /* ********************** */
-/* Highlights Section */
-/* .highlights-section {
-    width: 100%;
-    padding: 4rem 2rem;
-    text-align: center;
-    display: flex;
-    gap: 2rem;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: blue;
-
-}
-.highlight-item p, .student-item p{
-  color: black;
-}
-
-.highlight-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    max-width: 450px;
-    padding: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.highlight-icon i{
- color: rgb(85, 4, 4);
-}
-
-.highlight-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgb(85, 4, 4, 0.4);
-    background: rgb(85, 4, 4, 0.3);
-    color: rgb(85, 4, 4);
-} */
-
 /* **********************************************8 */
 /* CORE VALUE  */
 .core-val-section {
@@ -435,17 +397,6 @@ p, a, b{
     margin-left: 10px;
     margin-right: 10px;
 }
-  /* .highlights-section{
-    display: flex;
-    flex-direction: column;
-  } */
-    /* .intro-content {
-        flex-direction: column;
-        text-align: center;
-    } */
-    /* .school-name {
-        font-size: 3rem;
-    } */
     .student-pro {
     padding: 2rem 0;
     gap: 1rem;
