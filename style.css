@@ -410,7 +410,7 @@ p, a, b{
 .overlay {
   width: 100%;
   padding: 30px;
-  background: rgb(85, 4, 4, 0.3);
+  background: rgb(85, 4, 4, 0.7);
   text-align: center;
   transition: transform 0.4s ease;
   transform: translateY(0);

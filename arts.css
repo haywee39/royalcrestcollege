@@ -34,44 +34,6 @@ html{
       transform: translateY(0);
   }
   /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-  /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&/& */
-
-
-  #landing-arts{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 60vh;
-    background-image: url(./acdemicsimg/stuassbly.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-.child{
-    position: absolute;
-    width:100%;
-    height:100%;
-    color: white;
-    bottom: 0;
-    text-align: center;
-    background-color: rgb(85, 4, 4, 0.6);
-    z-index: 100;
-    
-}
-.title{
-    display: flex;
-    font-weight: 800;
-    margin-top: 25vh;
-    justify-content: center;
-    color: white;
-}
-
-.class-category{
-    width: 40%;
-    background-color: white;
-}
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
 .brief-intro{
   width: 100vw;
@@ -183,26 +145,6 @@ html{
   color: black;
 }
 /* ********************************************* */
-
-
-
-
-
-
-/* ************************** */
-/* .hero-video{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    transform: translate(-50%, -50%);
-    opacity: 0.3;
-} */
-
 .tour-section {
   padding: 65px 20px;
   width: 100vw;

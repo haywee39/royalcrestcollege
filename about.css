@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(85, 4, 4);;
 }
 p, a, b{
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
 }
 
@@ -93,42 +93,6 @@ p, a, b{
     transform: translateY(0);
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-
-/* ***************************************** */
-  #landing-about{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 60vh;
-    background-image: url(./homeimg/lfthand.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-
-.child{
-    position: absolute;
-    width:100%;
-    height:100%;
-    color: white;
-    bottom: 0;
-    text-align: center;
-    background-color: rgb(85, 4, 4, 0.6);
-    z-index: 100;
-    
-}
-.title{
-    display: flex;
-    font-weight: 800;
-    margin-top: 25vh;
-    justify-content: center;
-    color: white;
-    z-index: 10000;
-}
-.title b{
-  color: red;
-  word-spacing: 20px !important;
-}
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
 .about{
@@ -177,16 +141,34 @@ p, a, b{
 /* **********************************************8 */
 /* CORE VALUE  */
 .core-val-section {
-    width: 100%;
-    padding: 2rem 2rem;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: auto;
+    padding: 2rem 2rem;
+    text-align: center;
+    align-items: center;
     gap: 1rem;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: rgb(85, 4, 4, 0.3);
 
+}
+.heading{
+  color: rgb(85, 4, 4);
+}
+.core-val-cover {
+  color: rgb(85, 4, 4);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 20px;
+  padding: 20px 0;
+  text-align: center;
+  justify-items: center;
+  /* background-color: yellow; */
+}
+.highlight-icon i{
+  color: rgb(85, 4, 4);
 }
 .divider {
   width: 2px;
@@ -195,30 +177,24 @@ p, a, b{
   background-color: rgb(85, 4, 4);
 }
 
-.core-val-cover {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 per row */
-  gap: 25px;
-  text-align: center;
-  justify-items: center;
-  /* background-color: yellow; */
-}
+
 /* ************************************************* */
 /* Student-pro Section */
 .student-pro {
-    margin-top: 20px;
-    padding: 4rem 2rem;
-    text-align: center;
-    align-items: center;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
-    padding: 0 20px;
+    width: 100vw;
     height: auto;
+    text-align: center;
+    align-items: center;
     gap: 10px;
     justify-content: center;
     /* background-color: yellow; */
+}
+.student-pro h2{
+  color: rgb(85, 4, 4);
 }
 .student-pro h5{
   font-style: italic;
@@ -229,10 +205,9 @@ p, a, b{
     width: 85%;
     height: 70vh;
     margin: 3rem;
-    gap: 20px;
+    gap: 50px;
     justify-content: space-around;
     align-items: center;  
-    /* background-color: blueviolet; */
 }
 
 
@@ -253,7 +228,7 @@ p, a, b{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgb(85, 4, 4, 0.3) ;
+    background-color: rgb(85, 4, 4, 0.3);
     transform: rotate(45deg);
     border-radius: 20%;
     z-index: 0;
@@ -288,22 +263,20 @@ p, a, b{
     .diamond { animation: none; }
   }
 /* ****************************************************************** */
-.value{
+.value{ 
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
-    height: 80%;
+    width: 35%;
+    height: auto;
     gap: 10px;
-    /* color: black; */
-    /* background-color: red; */
+    text-align: center;
 }
-.value h3, h5, i{
-    color:  rgb(85, 4, 4) ;
+.value h1, .value p{
+    color: rgb(85, 4, 4);
+    letter-spacing: 2px;
 }
-.value p{
-  color: black;
-}
+
 /* ********************************************* */
  /* <!--START THE TEAM PROFILE BEGIN HERE--> */
   #team{
@@ -349,7 +322,6 @@ p, a, b{
     height: auto;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: orange; */
     overflow-y: hidden;
     overflow-x: hidden;
   }
@@ -387,41 +359,29 @@ p, a, b{
 /* Responsive Design */
 @media (max-width: 768px) {
 
-  /* ***************************************** */
-  #landing-about{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 35vh;
-  }
-
-.child{
-    position: absolute;
-    width:100%;
-    height:100%;
-    color: white;
-    bottom: 0;
-    text-align: center;
-    background-color: rgb(85, 4, 4, 0.6);
-    z-index: 100;
-    
-}
-.title{
-    display: flex;
-    font-weight: 800;
-    font-size: 2rem;
-    margin-top: 10vh;
-}
-.title b{
-  color: red;
-  word-spacing: 10px !important;
-}
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-    .logo{
+  .logo{
     display: none;
     visibility: hidden;
   }
+  .core-val-cover {
+  color: rgb(85, 4, 4);
+  grid-template-columns: repeat(2, 1fr); /* 3 per row */
+  
+}
+/* ********************* */
+  .stack {
+    width: 80vw;
+  }
+  .value{ 
+    align-items: center;
+    width: 100%;
+}
+.value h1, .value p{
+    color: rgb(85, 4, 4);
+    letter-spacing: 2px;
+}
+
+  /* &&&&&&&&&&&&&&&&&&&&&&& */
   .texts{
     padding: 20px;
     width: 100%;
@@ -432,17 +392,17 @@ p, a, b{
     border-radius: 15%;
     margin-left: 10px;
     margin-right: 10px;
-}
+  }
     .student-pro {
     padding: 2rem 0;
     gap: 1rem;
     flex-wrap: nowrap;
-    }
+  }
     .student-item{
     display: flex;
     flex-direction: column;
     height: auto;
-    }
+  }
 
 }
 
