@@ -84,7 +84,7 @@ html{
     display: grid;
     border-radius: 20%;
     place-items: center;
-    background-color: rgb(85, 4, 4);
+    /* background-color: rgb(85, 4, 4); */
 
   }
 
