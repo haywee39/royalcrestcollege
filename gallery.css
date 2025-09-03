@@ -60,11 +60,12 @@ p, a, b{
     overflow: auto;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 .lightbox-content {
     position: relative;
-    width: 70%;
-    height: 70%;
+    width: 65%;
+    height: 85%;
     margin: 5% auto;
 }
 .lightbox-content img {

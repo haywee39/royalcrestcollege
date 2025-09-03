@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Content Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .content-div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden; /* Important for the slide effect */
+            background-color: #f0f0f0;
+            min-height: 300px; /* Ensure there's enough height to see the animation */
+        }
+
+        /* Default layout: Image on left, Text on right (for .content-div:nth-child(even), and the default if no :nth-child applied) */
+        .content-div {
+            flex-direction: row; /* Default: img left, text right */
+        }
+
+        /* Layout for odd children: Text on left, Image on right */
+        .content-div:nth-child(odd) {
+            flex-direction: row-reverse; /* For first, third, etc.: img right, text left */
+        }
+
+        .image-container, .text-container {
+            flex: 1;
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+            opacity: 0; /* Initially hidden */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* Initial positions for elements BEFORE they become visible */
+
+        /* Image for .content-div (default: left side, slides in from left) */
+        .content-div .image-container {
+            transform: translateX(-100%); /* Slides in from the left */
+        }
+        /* Text for .content-div (default: right side, slides in from right) */
+        .content-div .text-container {
+            transform: translateX(100%); /* Slides in from the right */
+        }
+
+        /* Adjust positions for .content-div:nth-child(odd) */
+        /* Image for .content-div:nth-child(odd) (right side, slides in from right) */
+        .content-div:nth-child(odd) .image-container {
+             transform: translateX(100%); /* Slides in from the right */
+        }
+        /* Text for .content-div:nth-child(odd) (left side, slides in from left) */
+        .content-div:nth-child(odd) .text-container {
+            transform: translateX(-100%); /* Slides in from the left */
+        }
+
+
+        /* When a content-div becomes visible */
+        .content-div.visible .image-container,
+        .content-div.visible .text-container {
+            transform: translateX(0); /* Move to original position */
+            opacity: 1; /* Fade in */
+        }
+
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .content-div {
+                flex-direction: column !important; /* Stack vertically */
+                text-align: center;
+            }
+
+            /* Reset initial slide directions for mobile to be consistent (e.g., always from top/bottom or just fade in) */
+            /* For simplicity, let's make both image and text slide up/down, or just fade in. */
+            /* Let's make them both slide in from the bottom on mobile */
+            .image-container, .text-container {
+                transform: translateY(50px); /* Start slightly below */
+            }
+
+            .content-div.visible .image-container,
+            .content-div.visible .text-container {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content-div">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/400x300/ADD8E6/000000?text=Image+1" alt="Placeholder Image 1">
+            </div>
+            <div class="text-container">
+                <h2>Title One</h2>
+                <p>This is the text for the first div. The image will slide in from the left and the text from the right when this section is scrolled into view.</p>
+            </div>
+        </div>
+
+        <div class="content-div">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/400x300/90EE90/000000?text=Image+2" alt="Placeholder Image 2">
+            </div>
+            <div class="text-container">
+                <h2>Title Two</h2>
+                <p>This is the text for the second div. The image will slide in from the right and the text from the left when this section is scrolled into view.</p>
+            </div>
+        </div>
+
+        <div class="content-div">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/400x300/FFB6C1/000000?text=Image+3" alt="Placeholder Image 3">
+            </div>
+            <div class="text-container">
+                <h2>Title Three</h2>
+                <p>This is the text for the third div. The image will slide in from the left and the text from the right when this section is scrolled into view.</p>
+            </div>
+        </div>
+        <div style="height: 500px;"></div>
+        <div class="content-div">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/400x300/ADD8E6/000000?text=Image+4" alt="Placeholder Image 4">
+            </div>
+            <div class="text-container">
+                <h2>Title Four</h2>
+                <p>Another section to test scrolling. Image slides from left, text from right.</p>
+            </div>
+        </div>
+        <div style="height: 500px;"></div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contentDivs = document.querySelectorAll('.content-div');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5 // Adjust this value to control when the animation triggers
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        // Optional: remove 'visible' class when out of view to re-trigger on scroll back
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            }, observerOptions);
+
+            contentDivs.forEach(div => {
+                observer.observe(div);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 html{
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 html, body {
     margin: 0;
@@ -95,7 +95,7 @@ p, a, b{
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
-.about{
+/* .about{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +105,6 @@ p, a, b{
   }
  
   .texts{
-    /* margin-top: 8rem; */
     gap: 20px;
     padding: 20px;
     width: 70vw;
@@ -120,24 +119,159 @@ p, a, b{
     height: 130px;
     border-radius: 15%;
     margin-left: 2rem;
-    /* shape-outside:circle(); */
     background-color: white;
     float: left;
     margin-right: 2rem;
-    opacity: 0; /* Start invisible */
-    animation: fadeIn 2s ease-in forwards; /* Apply the fade-in animation */
+    opacity: 0;  Start invisible
+    animation: fadeIn 2s ease-in forwards; 
 }
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: scale(0.5); /* Start small */
+    transform: scale(0.5); 
   }
   100% {
     opacity: 1;
-    transform: scale(1); /* Grow to full size */
+    transform: scale(1); 
   }
-}
+} */
 /* **************************************************   */
+/* ********************************************* */
+.tour-section {
+  padding: 65px 20px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(85, 4, 4);
+  /* background-color: red; */
+}
+
+.tour-cover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 65%;
+  height: 100%;
+  gap: 2rem;
+  /* background-color: blue; */
+
+}
+.tour-cover h4, .tour-cover p{
+  color: white;
+}
+.tour-cover h4{
+  word-spacing: .5rem;
+  letter-spacing: .5rem;
+}
+.tour-cover p{
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+/* ****************************************** */
+
+   /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+        .slides {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: auto;
+            gap: 50px;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(85, 4, 4);
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* width: 100vw; */
+            /* height: auto; */
+            gap: 50px;
+            margin: 0;
+            padding: 0;
+            /* background-color: lightblue; */
+        }
+
+        .content-div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            overflow: hidden; /* Important for the slide effect */
+            min-height: 300px; /* Ensure there's enough height to see the animation */
+        }
+        .middle{
+          text-align: left !important;
+        }
+        .text-container{
+          text-align: right;
+          line-height: 5rem;
+          gap: 10px;
+          letter-spacing: 2px;
+          word-spacing: 5px;
+          font-style: italic;
+        }
+        .text-container h1, .text-container h5{
+          color: white;
+        }
+
+        /* Default layout: Image on left, Text on right (for .content-div:nth-child(even), and the default if no :nth-child applied) */
+        .content-div {
+            flex-direction: row; /* Default: img left, text right */
+        }
+
+        /* Layout for odd children: Text on left, Image on right */
+        .content-div:nth-child(odd) {
+            flex-direction: row-reverse; /* For first, third, etc.: img right, text left */
+        }
+
+        .image-container, .text-container {
+            flex: 1;
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+            opacity: 0; /* Initially hidden */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* Initial positions for elements BEFORE they become visible */
+
+        /* Image for .content-div (default: left side, slides in from left) */
+        .content-div .image-container {
+            transform: translateX(-100%); /* Slides in from the left */
+        }
+        /* Text for .content-div (default: right side, slides in from right) */
+        .content-div .text-container {
+            transform: translateX(100%); /* Slides in from the right */
+        }
+
+        /* Adjust positions for .content-div:nth-child(odd) */
+        /* Image for .content-div:nth-child(odd) (right side, slides in from right) */
+        .content-div:nth-child(odd) .image-container {
+             transform: translateX(100%); /* Slides in from the right */
+        }
+        /* Text for .content-div:nth-child(odd) (left side, slides in from left) */
+        .content-div:nth-child(odd) .text-container {
+            transform: translateX(-100%); /* Slides in from the left */
+        }
+
+
+        /* When a content-div becomes visible */
+        .content-div.visible .image-container,
+        .content-div.visible .text-container {
+            transform: translateX(0); /* Move to original position */
+            opacity: 1; /* Fade in */
+        }
+
 /* **********************************************8 */
 /* CORE VALUE  */
 .core-val-section {
@@ -160,7 +294,7 @@ p, a, b{
 .core-val-cover {
   color: rgb(85, 4, 4);
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  grid-template-columns: repeat(6, 1fr); /* 3 per row */
   gap: 20px;
   padding: 20px 0;
   text-align: center;
@@ -456,6 +590,29 @@ p, a, b{
     display: none;
     visibility: hidden;
   }
+  *********************** */
+    .tour-section{
+      width: 100%;
+      height: 100%;
+      padding: 15px 3px;
+  
+    }
+    .tour-cover{
+      width: 100%;
+      height: auto;
+      gap: .3rem;
+    }
+    .tour-section h4{
+       text-align: center;
+    }
+    .tour-cover p{
+      word-spacing: 0;
+      letter-spacing: 0;
+    }
+    .line{
+      height: 3vh;
+    }
+    /* ************************* */
   .core-val-cover {
   color: rgb(85, 4, 4);
   grid-template-columns: repeat(2, 1fr); /* 3 per row */
@@ -513,4 +670,24 @@ p, a, b{
     }
 
 }
+
+  /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .content-div {
+                flex-direction: column !important; /* Stack vertically */
+                text-align: center;
+            }
+
+            /* Reset initial slide directions for mobile to be consistent (e.g., always from top/bottom or just fade in) */
+            /* For simplicity, let's make both image and text slide up/down, or just fade in. */
+            /* Let's make them both slide in from the bottom on mobile */
+            .image-container, .text-container {
+                transform: translateY(50px); /* Start slightly below */
+            }
+
+            .content-div.visible .image-container,
+            .content-div.visible .text-container {
+                transform: translateY(0);
+            }
+        }
 

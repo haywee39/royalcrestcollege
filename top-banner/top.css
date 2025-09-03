@@ -28,7 +28,7 @@ p, a, b{
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
     background-image: url();
     background-size: cover;
     background-position: center;
@@ -52,24 +52,42 @@ p, a, b{
 
 .title{
     display: flex;
-    /* font-weight: 800; */
     justify-content: center;
     color: white;
     z-index: 10000;
 }
 .child-cover b{
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: lighter;
+  padding: 0 3rem;
+}
+.child-cover p{
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 0 3rem;
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
 /* Responsive Design */
 @media (max-width: 768px) {
  .child-cover{
-   padding: 0 2rem;
+   padding: 0 1rem;
   }
   .title{
-    margin-top: 15vh;
+    margin-top: 13vh;
   }
+  .child-cover b{
+  /* color: white; */
+  /* font-size: 20px; */
+  /* font-weight: lighter; */
+  padding: 0 .5rem;
+}
+.child-cover p{
+  /* color: white; */
+  /* font-size: 20px; */
+  /* font-weight: lighter; */
+  padding: 0 .5rem;
+}
 }

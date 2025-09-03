@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(85, 4, 4);
 }
 p, a, b{
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   color: white;
 }
@@ -60,6 +60,7 @@ p, a, b{
 
     /* Percentage text */
     #percentage {
+      font-family: 'Merriweather', serif;
       color: white;
       font-size: 24px;
       margin-bottom: 15px;
@@ -282,9 +283,6 @@ p, a, b{
     flex: 1;
     text-align: left;
 }
-.intro-text-container p{
-    color: black;
-}
 
 .intro-container img {
     width: 100%;
@@ -292,7 +290,6 @@ p, a, b{
     display: block;
     border-radius: 8px;
 }
-/* ********************** */
 /* ****************************** */
 /* Student-pro Section */
 .student-pro {
@@ -306,7 +303,6 @@ p, a, b{
     height: auto;
     gap: 2rem;
     justify-content: center;
-    /* background-color: yellow; */
 }
 .student-pro h5{
   font-style: italic;
@@ -319,7 +315,6 @@ p, a, b{
     margin: 3rem;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: blueviolet; */
 }
 .student-item img{
     width: 35%;
@@ -332,10 +327,6 @@ p, a, b{
     align-items: center;
     width: 30%;
     height: 80%;
-    /* background-color: red; */
-}
-.value p{
-  color: black;
 }
 .value i{
     color:  rgb(85, 4, 4, 0.7) ;
@@ -369,7 +360,6 @@ p, a, b{
 }
 .standout-cover h2{
   word-spacing: .5rem;
-  /* letter-spacing: .5rem; */
 }
 .standout-cover h6{
   color: rgb(85, 4, 4);
@@ -502,7 +492,6 @@ p, a, b{
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  /* border: 1px solid rgb(85, 4, 4); */
 }
 
 .testimonial-author h4 {
@@ -591,15 +580,12 @@ p, a, b{
   width: 65%;
   height: 100%;
   gap: 2rem;
-  /* background-color: blue; */
-
 }
 .tour-cover h2, h6{
   color: white;
 }
 .tour-cover h2{
   word-spacing: .5rem;
-  /* letter-spacing: .5rem; */
 }
 .tour-cover h6{
   word-spacing: .5rem;
@@ -756,7 +742,6 @@ p, a, b{
     }
     .student-item img{
         width: 85%;
-        /* padding: 0; */
     }
     .value{
         align-items: center;

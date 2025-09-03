@@ -20,6 +20,35 @@
       }
     }, 30); // Adjust speed (30ms × 100 = 3 seconds total)
   // &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+  // *********************************************************************************
+  document.addEventListener('DOMContentLoaded', () => {
+            const contentDivs = document.querySelectorAll('.content-div');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5 // Adjust this value to control when the animation triggers
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        // Optional: remove 'visible' class when out of view to re-trigger on scroll back
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            }, observerOptions);
+
+            contentDivs.forEach(div => {
+                observer.observe(div);
+            });
+        });
+
+// &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
 // *******************************************************
 // ANIMATED SCROLL 
 
