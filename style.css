@@ -20,15 +20,13 @@ p, a, b{
  p, a{
     font-weight: normal;
   }
-
-
+/* ********************************* */
 /* animated section */
 .animated-section {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-
 /* Final state (visible) */
 .animated-section.is-visible {
     opacity: 1;
@@ -36,7 +34,6 @@ p, a, b{
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
   /* Loader Container */
-
     #loader {
       position: fixed;
       top: 0;
@@ -50,10 +47,9 @@ p, a, b{
       flex-direction: column;
       z-index: 99999;
     }
-
     /* Logo */
     #loader img {
-      width: 120px; /* adjust as needed */
+      width: 120px;
       margin-bottom: 20px;
       background-color: white;
     }
@@ -62,7 +58,7 @@ p, a, b{
     #percentage {
       font-family: 'Merriweather', serif;
       color: white;
-      font-size: 24px;
+      font-size: 25px;
       margin-bottom: 15px;
       font-weight: bold;
     }
@@ -75,7 +71,6 @@ p, a, b{
       border-radius: 2px;
       overflow: hidden;
     }
-
     .progress-bar-fill {
       height: 100%;
       width: 0%;
@@ -91,11 +86,6 @@ p, a, b{
     }
     /* loader ends  */
   /* ************************************* */
-
-
-
-
-
  /* MENU / CLOSE toggle */
     .menu-toggle {
       position: fixed;
@@ -126,23 +116,22 @@ p, a, b{
     }
     .logo {
       position: absolute;
+      width: 120px;
+      height: 120px;
+      border: white 1px solid;
+      background: white;
       top: 20vh;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 10000;
     }
-    .logo{
-      width: 120px;
-      height: 120px;
-      border: white 1px solid;
-      background: white;
-    }
+  /* *********************************** */
  /* Fullscreen overlay menu */
     .fullscreen-menu {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 100vw;
       height: 100vh;
       background: rgb(85, 4, 4);
       display: flex;
@@ -183,12 +172,12 @@ p, a, b{
       width: 100%;
     }
 /* ***************************************** */
-/* ************************************** */
 
 /* Hero Section */
 .hero-section {
     position: relative;
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -235,14 +224,12 @@ p, a, b{
       font-size: 25px;
 }
 
-
 .school-name {
-    font-size: 3rem;
-    color: var(--background-white);
+    font-size: 2.5rem;
+    color: white;
 }
-
 .tagline {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 2px;
     margin-top: 0;
@@ -264,6 +251,7 @@ p, a, b{
     transform: translateY(-5px);
     border: none;
 }
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
 /* Intro Section */
 .intro-section {
@@ -291,7 +279,6 @@ p, a, b{
     border-radius: 8px;
 }
 /* ****************************** */
-/* Student-pro Section */
 .student-pro {
     padding: 4rem 2rem;
     text-align: center;
@@ -306,7 +293,8 @@ p, a, b{
 }
 .student-pro h5{
   font-style: italic;
-  padding: 0 40px;
+  padding: 0 ;
+  color: rgb(85, 4, 4);
 }
 .student-item{
     display: flex;
@@ -340,7 +328,6 @@ p, a, b{
   align-items: center;
   justify-content: center;
   background-color: rgb(85, 4, 4, 0.2);
-  /* background-color: red; */
 }
 
 .standout-cover{
@@ -349,9 +336,9 @@ p, a, b{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 65%;
+  width: 60%;
   height: 100%;
-  gap: 2rem;
+  gap: 1.5rem;
   /* background-color: blue; */
 
 }
@@ -361,10 +348,11 @@ p, a, b{
 .standout-cover h2{
   word-spacing: .5rem;
 }
-.standout-cover h6{
+.standout-cover h5{
+  font-size: 20px;
   color: rgb(85, 4, 4);
-  word-spacing: 1rem;
-  letter-spacing: .7rem;
+  word-spacing: .8rem;
+  letter-spacing: .3rem;
 }
 /* ****************************************** */
 .three-menus {
@@ -405,6 +393,9 @@ p, a, b{
   transition: transform 0.4s ease;
   transform: translateY(0);
 }
+.overlay p{
+  font-weight: lighter;
+}
 
 .overlay h2, .overlay p {
   margin-bottom: 10px;
@@ -443,7 +434,6 @@ p, a, b{
   font-size: 2rem;
   margin-bottom: 40px;
   color: rgb(85, 4, 4);
-  font-weight: bold;
 }
 
 .testimonial-carousel {
@@ -458,7 +448,7 @@ p, a, b{
   background: #fff;
   padding: 35px 25px;
   border-radius: 16px;
-  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 25px rgb(85, 4, 4, 0.1);
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
@@ -476,8 +466,8 @@ p, a, b{
   font-style: italic;
   color: rgb(85, 4, 4);
   margin-bottom: 25px;
-  line-height: 1.7;
-  font-size: 1.1rem;
+  line-height: 1.5;
+  font-size: 1.3rem;
 }
 
 .testimonial-author {
@@ -488,34 +478,35 @@ p, a, b{
 }
 
 .testimonial-author img {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .testimonial-author h4 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   color: rgb(85, 4, 4);
 }
 
 .testimonial-author span {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgb(85, 4, 4);
 }
 
 /* Navigation Arrows */
 .testimonial-carousel .prev,
 .testimonial-carousel .next {
-  position: absolute;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
-  background: rgb(85, 4, 4);
+  background: rgb(85, 4, 4, 0.5);
   color: #fff;
   border: none;
-  font-size: 2rem;
-  padding: 8px 14px;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   cursor: pointer;
   transition: background 0.3s;
@@ -541,8 +532,8 @@ p, a, b{
 }
 
 .dots span {
-  height: 12px;
-  width: 12px;
+  height: 15px;
+  width: 15px;
   margin: 0 5px;
   display: inline-block;
   background: rgb(85, 4, 4, 0.3);
@@ -554,7 +545,7 @@ p, a, b{
 .dots .active {
   background: rgb(85, 4, 4);
 }
-.container{
+.container{  /*this hold the vert line to the middle*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -577,23 +568,21 @@ p, a, b{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 65%;
+  width: 60%;
   height: 100%;
-  gap: 2rem;
+  gap: 1.5rem;
 }
-.tour-cover h2, h6{
-  color: white;
-}
+
 .tour-cover h2{
   word-spacing: .5rem;
+  color: white;
 }
-.tour-cover h6{
-  word-spacing: .5rem;
-  letter-spacing: 1rem;
+.tour-cover h5{
+  font-size: 20px;
+  word-spacing: .8rem;
+  letter-spacing: .3rem;
 }
 /* ****************************************** */
-
-
 /* ************************************ */
  .partners-section {
       background: transparent;
@@ -661,7 +650,6 @@ p, a, b{
   width: 100%;
   height: 45vh;
   padding: 0;
-  /* background-color: red; */
 }
 
 .quick-link {
@@ -671,7 +659,6 @@ p, a, b{
   max-width: 200px;
   color: white; 
   gap: 5px; 
-  /* background-color: blue;     */
 }
 .quick-link a{
   text-decoration: none;
@@ -683,7 +670,6 @@ p, a, b{
   text-align: left;    
   max-width: 300px;
   color: white; 
-  /* background-color: blue;      */
 }
 .address p{
   color: white;
@@ -712,12 +698,11 @@ p, a, b{
     visibility: hidden;
   }
   .school-name {
-    font-size:2rem;
+    font-size:1rem;
 }
 
 .tagline {
     font-size: 1rem;
-    font-weight: 400;
 }
   .highlights-section{
     display: flex;
@@ -730,6 +715,7 @@ p, a, b{
     .school-name {
         font-size: 3rem;
     }
+    /* ******************* */
     .student-pro {
     padding: 2rem 0;
     gap: 1rem;
@@ -756,16 +742,19 @@ p, a, b{
   
     }
     .standout-cover{
-      width: 85%;
+      width: 95%;
       height: auto;
       gap: .2rem;
     }
     .standout-section h2{
        text-align: center;
+       padding: 0 5px;
     }
-    .line{
-      height: 3vh;
-    }
+    .standout-cover h5{
+      font-size: 20px;
+      word-spacing: .3rem;
+      letter-spacing: 2px;
+     }
 
     /* *************************** */
     .three-menus {
@@ -789,16 +778,15 @@ p, a, b{
       height: auto;
       gap: .5rem;
     }
-    .tour-section h2{
+     .tour-section h2{
        text-align: center;
+       padding: 0 5px;
     }
-    .tour-cover h6{
-      word-spacing: 0;
-      letter-spacing: 1rem;
-    }
-    .line{
-      height: 3vh;
-    }
+    .tour-cover h5{
+      font-size: 20px;
+      word-spacing: .3rem;
+      letter-spacing: 2px;
+     }
     /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
     .contact-address{
       flex-direction: column;

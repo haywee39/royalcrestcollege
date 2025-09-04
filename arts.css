@@ -12,8 +12,9 @@ html{
       color: rgb(85, 4, 4);;
   }
   p, a, b{
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
+    color: white;
   }
   
    p, a{
@@ -45,7 +46,6 @@ html{
   /* ************************************************* */
 /* Student-pro Section */
 .student-pro {
-    /* margin-top: 20px; */
     padding: 4rem 2rem;
     text-align: center;
     align-items: center;
@@ -72,10 +72,7 @@ html{
     gap: 20px;
     justify-content: space-around;
     align-items: center;  
-    /* background-color: blueviolet; */
 }
-
-
 /* ****************************************************    */
 
 
@@ -102,9 +99,6 @@ html{
 .value h3, h5, i, p{
     color:  rgb(85, 4, 4) ;
 }
-/* .value p{
-  color: black;
-} */
 /* ********************************************* */
 .tour-section {
   padding: 65px 20px;
@@ -113,7 +107,7 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(85, 4, 4, 0.3);
+  background-color: rgb(85, 4, 4, 0.6);
   /* background-color: red; */
 }
 
@@ -123,22 +117,21 @@ html{
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 65%;
+  width: 60%;
   height: 100%;
-  gap: 2rem;
-  /* background-color: blue; */
-
+  gap: 1.5rem;
 }
-.tour-cover h2, h6{
+.tour-cover h2{
   color: white;
 }
 .tour-cover h2{
   word-spacing: .5rem;
-  /* letter-spacing: .5rem; */
 }
-.tour-cover h6{
-  word-spacing: .5rem;
-  letter-spacing: 1rem;
+.tour-cover h5{
+  color: white;
+  font-size: 20px;
+  word-spacing: .8rem;
+  letter-spacing: .3rem;
 }
 /* ****************************************** */
 /* ************************************* */
@@ -268,8 +261,6 @@ html{
 }
 
   /* &&&&&&&&&&&&&&&&&&&&&&& */
-    /* ************************ */
-    /* ************************ */
     .tour-section{
       width: 100%;
       height: 100%;
@@ -283,15 +274,13 @@ html{
     }
     .tour-section h2{
        text-align: center;
+       padding: 0 5px;
     }
-    .tour-cover h6{
-      word-spacing: 0;
-      letter-spacing: 1rem;
+    .tour-cover h5{
+      font-size: 20px;
+      word-spacing: .3rem;
+      letter-spacing: 2px;
     }
-    .line{
-      height: 3vh;
-    }
-    /* ************************* */
       /* &&&&&&&&&&&&&&&&&&&&& */
     .contact-address{
       flex-direction: column;

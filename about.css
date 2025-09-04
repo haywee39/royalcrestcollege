@@ -16,13 +16,24 @@ p, a, b{
   text-decoration: none;
 }
 
- p, a{
+ p{
     font-weight: normal;
   }
+/* ************************************* */
+/* animated section */
+.animated-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
-  /* ************************** */
+/* Final state (visible) */
+.animated-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
    /* Loader Container */
-  
     #loader {
       position: fixed;
       top: 0;
@@ -46,8 +57,9 @@ p, a, b{
 
     /* Percentage text */
     #percentage {
+      font-family: 'Merriweather', serif;
       color: white;
-      font-size: 24px;
+      font-size: 25px;
       margin-bottom: 15px;
       font-weight: bold;
     }
@@ -75,24 +87,6 @@ p, a, b{
       transition: opacity 0.8s ease, visibility 0.8s ease;
     }
     /* loader ends  */
-  /* ************************************* */
-
-
-  /* ************************************* */
-
-/* animated section */
-.animated-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-/* Final state (visible) */
-.animated-section.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
 /* .about{
@@ -145,7 +139,6 @@ p, a, b{
   align-items: center;
   justify-content: center;
   background-color: rgb(85, 4, 4);
-  /* background-color: red; */
 }
 
 .tour-cover{
@@ -156,21 +149,18 @@ p, a, b{
   text-align: center;
   width: 65%;
   height: 100%;
-  gap: 2rem;
-  /* background-color: blue; */
+  gap: 1.5rem;
 
 }
 .tour-cover h4, .tour-cover p{
   color: white;
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 25px;
 }
 .tour-cover h4{
   word-spacing: .5rem;
   letter-spacing: .5rem;
-}
-.tour-cover p{
-  font-family: 'Merriweather', serif;
-  font-weight: bold;
-  font-size: 25px;
 }
 /* ****************************************** */
 
@@ -184,17 +174,14 @@ p, a, b{
             margin: 0;
             padding: 0;
             background-color: rgb(85, 4, 4);
-            color: white;
         }
         .container {
             display: flex;
             flex-direction: column;
-            /* width: 100vw; */
-            /* height: auto; */
             gap: 50px;
             margin: 0;
             padding: 0;
-            /* background-color: lightblue; */
+            
         }
 
         .content-div {
@@ -216,8 +203,15 @@ p, a, b{
           word-spacing: 5px;
           font-style: italic;
         }
-        .text-container h1, .text-container h5{
+        .text-container h1{
           color: white;
+          font-weight: bolder;
+          font-size: 4rem;
+        }
+        .text-container h5{
+          color: white;
+          /* font-weight: bold; */
+          /* font-size: 20px; */
         }
 
         /* Default layout: Image on left, Text on right (for .content-div:nth-child(even), and the default if no :nth-child applied) */
@@ -294,24 +288,21 @@ p, a, b{
 .core-val-cover {
   color: rgb(85, 4, 4);
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 3 per row */
-  gap: 20px;
+  grid-template-columns: repeat(6, 1fr); /* 6 per row */
+  gap: 3rem;font-weight: bold;
   padding: 20px 0;
   text-align: center;
   justify-items: center;
-  /* background-color: yellow; */
 }
 .highlight-icon i{
   color: rgb(85, 4, 4);
 }
 .divider {
   width: 2px;
-  height: 5vh;
+  height: 4vh;
   margin: 8px auto;
   background-color: rgb(85, 4, 4);
 }
-
-
 /* ************************************************* */
 /* Student-pro Section */
 .student-pro {
@@ -325,7 +316,6 @@ p, a, b{
     align-items: center;
     gap: 10px;
     justify-content: center;
-    /* background-color: rebeccapurple; */
 }
 .student-pro h2{
   color: rgb(85, 4, 4);
@@ -343,8 +333,6 @@ p, a, b{
     justify-content: space-around;
     align-items: center;  
 }
-
-
 /* ****************************************************    */
   .stack {
     position: relative;
@@ -353,7 +341,6 @@ p, a, b{
     display: grid;
     border-radius: 20%;
     place-items: center;
-    /* background-color: rgb(85, 4, 4, 0.3); */
 
   }
 
@@ -420,7 +407,6 @@ p, a, b{
     width:100vw;
     height: auto; 
     align-items: center;
-    /* background: lightcoral; */
   }
   
   .team-profile {
@@ -487,7 +473,6 @@ p, a, b{
   
   /* <!--END THE TEAMS PROFILE END HERE   --> */
 /* *************************************************** */
-/* ************************************* */
 
 /* CTA Footer */
 .cta-footer {
@@ -539,7 +524,6 @@ p, a, b{
   width: 100%;
   height: 45vh;
   padding: 0;
-  /* background-color: red; */
 }
 
 .quick-link {
@@ -549,7 +533,6 @@ p, a, b{
   max-width: 200px;
   color: white; 
   gap: 5px; 
-  /* background-color: blue;     */
 }
 .quick-link a{
   text-decoration: none;
@@ -561,7 +544,6 @@ p, a, b{
   text-align: left;    
   max-width: 300px;
   color: white; 
-  /* background-color: blue;      */
 }
 .address p{
   color: white;
@@ -613,9 +595,9 @@ p, a, b{
       height: 3vh;
     }
     /* ************************* */
-  .core-val-cover {
+.core-val-cover {
   color: rgb(85, 4, 4);
-  grid-template-columns: repeat(2, 1fr); /* 3 per row */
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
   
 }
 /* ********************* */
@@ -670,12 +652,12 @@ p, a, b{
     }
 
 }
-
+  /* slide s for history 3 years  */
   /* Mobile responsiveness */
         @media (max-width: 768px) {
             .content-div {
                 flex-direction: column !important; /* Stack vertically */
-                text-align: center;
+                /* text-align: center; */
             }
 
             /* Reset initial slide directions for mobile to be consistent (e.g., always from top/bottom or just fade in) */

@@ -12,8 +12,9 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(85, 4, 4);;
 }
 p, a, b{
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
+  color: white;
 }
 
  p, a{
@@ -34,14 +35,6 @@ p, a, b{
     transform: translateY(0);
 }
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-/* 
-.brief-intro{
-  width: 100vw;
-  padding: 4rem;
-  text-align: center;
-  color: rgb(85, 4, 4);
-} */
-/* ****************************************** */
 .over-section {
   min-height: 100vh;
   width: 100%;
@@ -83,16 +76,6 @@ p, a, b{
   padding-left: 20px;
   padding-right: 20px;
 }
-/* 
-.section-header {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-
-.section-header p {
-  color: #FFF;
-} */
 
 .row  {
   display: flex;
@@ -123,7 +106,6 @@ p, a, b{
 
 .contact-info-icon i {
   font-size: 20px;
-  /* line-height: 70px; */
 }
 
 .contact-info-content {
@@ -160,7 +142,6 @@ p, a, b{
   position: relative;
   width: 100%;
   margin-top: 10px;
-  /* background-color: transparent; */
 }
 
 .contact-form .input-box input,
@@ -213,11 +194,7 @@ p, a, b{
   color:  rgb(85, 4, 4);
 }
 
-
-
-
-
-
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 @media (max-width: 991px) {
   .sect-cova {
     padding-top: 50px;
