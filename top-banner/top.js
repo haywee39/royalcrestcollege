@@ -17,11 +17,13 @@ fetch("top-banner/top.html")
     const title = container.dataset.title;
     const b = container.dataset.b;
     const p = container.dataset.p;
+    const a = container.dataset.a;
 
     // Apply background image + title
     if (bg) landingTop.style.backgroundImage = `url(${bg})`;
     if (title) landingTop.querySelector(".title").textContent = title;
     if (b) landingTop.querySelector("b").textContent = b;
     if (p) landingTop.querySelector("p").textContent = p;
+    if (a) landingTop.querySelector("p").textContent = a;
   })
   .catch(error => console.error("Error loading top-page:", error));

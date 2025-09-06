@@ -55,7 +55,6 @@ p, a, b{
   left: 0;
   height: 100%;
   width: 100%;
-  /* background-color: rgba(0,0,0,0.5); */
   background-color:  rgb(85, 4, 4, 0.7);
 }
 
@@ -69,7 +68,6 @@ p, a, b{
 .container {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
@@ -193,6 +191,83 @@ p, a, b{
   background: #FFF;
   color:  rgb(85, 4, 4);
 }
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&/& */
+    /* the accordions styling  */
+    .contact-section{
+      display: flex;
+      width: 100%;
+      height: auto;      
+      justify-content: center;
+      background-color: rgb(85, 4, 4, 0.3);
+    }
+
+    .cover-it {
+      /* max-width: 800px; */
+      width: 60%;
+      padding: 3rem;
+    }
+
+    .accordion{
+        border: none;
+    }
+
+    .contact-section h2 {
+      color: rgb(85, 4, 4); 
+      padding-bottom: 5px;
+    }
+    .accordion-header {
+      font-family: 'Merriweather', serif ;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: rgb(85, 4, 4);
+      transition: background 0.3s ease;
+      background-color: rgb(85, 4, 4, 0.5);
+    }
+
+    .accordion-header:hover {
+      background-color: rgb(85, 4, 4, 0.7);
+      color: white;
+    }
+
+    .accordion-icon {
+      color: rgb(85, 4, 4);
+      transition: transform 0.3s ease;
+    }
+     .accordion-icon:hover {
+      color: white;
+    }
+    
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      padding: 0 15px;
+      font-size: 15px;
+      line-height: 1.5;
+      background-color: rgb(85, 4, 4, 0.3);
+    }
+
+    .accordion-content p{
+      color: rgb(85, 4, 4);
+    }
+
+    .accordion-item.active .accordion-content {
+      padding: 15px;
+      max-height: 300px; /* adjust if your content is taller */
+    }
+
+    .accordion-item.active .accordion-icon {
+      transform: rotate(180deg);
+    }
+
+
+
+
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 @media (max-width: 991px) {
@@ -318,6 +393,18 @@ p, a, b{
     padding: 1rem;
   }
   /* ******************************* */
+
+  /* accordion for other contaCT info */
+      .cover-it {
+      /* max-width: 800px; */
+      width: 100%;
+      padding: 2rem;
+    }
+
+     .contact-section h2 {
+      font-size: 1.2rem; 
+      /* padding-bottom: 5px; */
+    }
     /* &&&&&&&&&&&&&&&&&&&&& */
     .contact-address{
       flex-direction: column;
