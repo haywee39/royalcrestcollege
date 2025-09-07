@@ -1,0 +1,179 @@
+
+    html{
+      overflow-x: hidden;
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: red;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Merriweather', serif;
+        color: rgb(85, 4, 4);;
+    }
+    p, a, b{
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    p, a{
+        font-weight: normal;
+      }
+
+   /* MENU / CLOSE toggle */
+    .menu-toggle {
+      position: fixed;
+      top: 2rem;
+      left: 20px;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      z-index: 10000;     
+      text-decoration: underline;
+      text-underline-offset: 15px;
+      letter-spacing: 2px;
+      user-select: none;
+    }
+    
+    .logo {
+      position: absolute;
+      top: 20vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10000;
+    }
+    .logo{
+      width: 120px;
+      height: 120px;
+      border: white 1px solid;
+      background: white;
+    }
+  /* Fullscreen overlay menu */
+    .fullscreen-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgb(85, 4, 4);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 80px 30px;
+      transform: translateX(-100%);
+      transition: transform 0.4s ease;
+      z-index: 9999;
+    }
+    .fullscreen-menu.show {
+      transform: translateX(0);
+    }
+
+    /* Nav links */
+    .fullscreen-menu a {
+      position: relative;
+      display: inline-block;
+      color: white;
+      font-size: 1.2rem;
+      margin: 10px 0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .fullscreen-menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: white;
+      transition: width 0.3s ease;
+    }
+    
+    .fullscreen-menu a:hover::after {
+      width: 100%;
+    }
+   
+
+    /* Responsive Design */
+  @media (max-width: 768px) {
+  .logo{
+    display: none;
+    visibility: hidden;
+    }
+
+  }
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+     .tour-toggle {
+      position: fixed;
+      top: 2rem;
+      right: 20px;
+      text-align: right;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      z-index: 10000;
+      text-decoration: underline;
+      text-underline-offset: 15px;
+      letter-spacing: 2px;
+      user-select: none;
+    }
+
+
+    /* Tour Form Overlay */
+.tour-form-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(85, 4, 4, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    z-index: 9999;
+}
+
+.tour-form-overlay.show {
+    transform: translateX(0);
+}
+
+.tour-form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-tour-form {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: orangered;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: rgb(85, 4, 4);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

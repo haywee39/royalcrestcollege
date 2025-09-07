@@ -24,21 +24,21 @@
 
 
 
-// FULLSCREEN MENU DESIGN
-  const menuToggle = document.getElementById("menuToggle");
-  const fullscreenNav = document.getElementById("fullscreenNav");
-  let menuOpen = false;
+// // FULLSCREEN MENU DESIGN
+//   const menuToggle = document.getElementById("menuToggle");
+//   const fullscreenNav = document.getElementById("fullscreenNav");
+//   let menuOpen = false;
 
-  menuToggle.addEventListener("click", () => {
-    menuOpen = !menuOpen;
-    if (menuOpen) {
-      fullscreenNav.classList.add("show");
-      menuToggle.textContent = "CLOSE";
-    } else {
-      fullscreenNav.classList.remove("show");
-      menuToggle.textContent = "MENU";
-    }
-  });
+//   menuToggle.addEventListener("click", () => {
+//     menuOpen = !menuOpen;
+//     if (menuOpen) {
+//       fullscreenNav.classList.add("show");
+//       menuToggle.textContent = "CLOSE";
+//     } else {
+//       fullscreenNav.classList.remove("show");
+//       menuToggle.textContent = "MENU";
+//     }
+//   });
 // *******************************************************
 
 // TYPING EFFECT OF CORE VALUES 

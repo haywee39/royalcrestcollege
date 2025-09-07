@@ -87,7 +87,7 @@ p, a, b{
     /* loader ends  */
   /* ************************************* */
  /* MENU / CLOSE toggle */
-    .menu-toggle {
+    /* .menu-toggle {
       position: fixed;
       top: 2rem;
       left: 20px;
@@ -124,10 +124,10 @@ p, a, b{
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 10000;
-    }
+    } */
   /* *********************************** */
  /* Fullscreen overlay menu */
-    .fullscreen-menu {
+    /* .fullscreen-menu {
       position: fixed;
       top: 0;
       left: 0;
@@ -147,7 +147,7 @@ p, a, b{
       transform: translateY(0);
     }
 
-    /* Nav links */
+    Nav links
     .fullscreen-menu a {
       position: relative;
       display: inline-block;
@@ -170,7 +170,7 @@ p, a, b{
     
     .fullscreen-menu a:hover::after {
       width: 100%;
-    }
+    } */
 /* ***************************************** */
 
 /* Hero Section */
