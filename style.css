@@ -381,9 +381,9 @@ p, a, b{
   /* filter: brightness(0.6); */
 }
 
-.box1::before { background-image: url("./homeimg/lever.jpg"); }
-.box2::before { background-image: url("./homeimg/pins.jpg"); }
-.box3::before { background-image: url("./homeimg/lfthand.jpg"); }
+.box1::before { background-image: url("./tinyimg/grad2.jpg"); }
+.box2::before { background-image: url("./tinyimg/music.jpg"); }
+.box3::before { background-image: url("./tinyimg/dancechoreo_1.jpg"); }
 
 .overlay {
   width: 100%;

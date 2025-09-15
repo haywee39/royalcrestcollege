@@ -24,6 +24,6 @@ fetch("top-banner/top.html")
     if (title) landingTop.querySelector(".title").textContent = title;
     if (b) landingTop.querySelector("b").textContent = b;
     if (p) landingTop.querySelector("p").textContent = p;
-    if (a) landingTop.querySelector("p").textContent = a;
+    if (a) landingTop.querySelector("a").textContent = a;
   })
   .catch(error => console.error("Error loading top-page:", error));
