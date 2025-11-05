@@ -89,10 +89,8 @@ p, a, b{
       z-index: 10000;
     }
     .logo{
-      width: 120px;
-      height: 120px;
-      border: white 1px solid;
-      background: white;
+      width:200px;
+      height: 200px;
     }
  /* Fullscreen overlay menu */
     .fullscreen-menu {
@@ -174,10 +172,8 @@ p, a, b{
       color: white;
     }
     .logos{
-      width: 120px;
-      height: 120px;
-      border: white 1px solid;
-      background: white;
+      width: 150px;
+      height: 150px;
     }
     /* **************************************** */
     /* ************************************* */

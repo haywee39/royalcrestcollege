@@ -50,9 +50,7 @@ p, a, b{
 
     /* Logo */
     #loader img {
-      width: 120px; /* adjust as needed */
-      margin-bottom: 20px;
-      background-color: white;
+      width: 230px; 
     }
 
     /* Percentage text */
@@ -326,12 +324,13 @@ p, a, b{
 }
 .student-item{
     display: flex;
-    width: 85%;
+    width: 60%;
     height: 70vh;
     margin: 3rem;
-    gap: 50px;
+    gap: 30px;
     justify-content: space-around;
     align-items: center;  
+    /* background-color: blue; */
 }
 /* ****************************************************    */
   .stack {
@@ -392,8 +391,9 @@ p, a, b{
     height: auto;
     gap: 10px;
     text-align: center;
+    /* background-color: red; */
 }
-.value h1, .value p{
+.value h1{
     color: rgb(85, 4, 4);
     letter-spacing: 2px;
 }
