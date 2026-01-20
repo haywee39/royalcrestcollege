@@ -510,7 +510,7 @@ p, a, b{
 }
 /* ****************************************** */
 /* ************************************ */
- .partners-section {
+ /* .partners-section {
       background: transparent;
       width: 100vw;
       padding: 40px 0;
@@ -538,7 +538,7 @@ p, a, b{
       100% {
         transform: translateX(-50%);
       }
-    }
+    } */
 /* ************************************* */
 
 /* CTA Footer */
